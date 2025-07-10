@@ -6,8 +6,7 @@ import { useRouter } from "next/navigation";
 
 const HomeView = () => {
   const router = useRouter();
-  // @ts-ignore
-  const { data: session } = authClient.useSession();
+  const { data: session } = authClient.useSession() as any;
   //   console.log("Session data:", session);
 
   if (!session) {
