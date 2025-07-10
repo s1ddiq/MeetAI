@@ -8,6 +8,9 @@ const Page = async () => {
     headers: await headers(),
   });
 
+  // https://youtu.be/gRseQH9EHjY
+  // ^^ got this ad while watching something lol
+
   if (!session) {
     redirect("/sign-in");
   }
