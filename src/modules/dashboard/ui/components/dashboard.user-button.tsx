@@ -49,7 +49,7 @@ const DashboardUserButton = () => {
   const { data, isPending } = authClient.useSession() as any;
 
   if (isPending || !data.user.name) {
-    return null;
+    return null;z
   }
 
   const onLogout = async () => {
