@@ -45,12 +45,12 @@ const DashboardNavbar = () => {
           size="sm"
           className="h-9 w-[240px] justify-start font-normal text-muted-foreground hover:text-muted-foreground"
           variant="outline"
-          onClick={(open) => setCommandOpen(!open)}
+          onClick={() => setCommandOpen((prev) => !prev)}
         >
           <SearchIcon />
           Search
           <kbd className="ml-auto pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono font-medium text-muted-foreground">
-            <span className="ml-auto text-sm">Ctrl</span> + <span>K</span>
+            <span className="ml-auto text-xs">Ctrl</span> + <span>K</span>
           </kbd>
         </Button>
       </nav>
